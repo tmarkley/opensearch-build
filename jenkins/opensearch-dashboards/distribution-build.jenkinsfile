@@ -10,7 +10,7 @@ pipeline {
         )
     }
     options {
-        copyArtifactPermission("Playground\markleyt-distribution-build-opensearch-dashboards")
+        copyArtifactPermission("markleyt-distribution-build-opensearch-dashboards")
         buildDiscarder(logRotator(artifactNumToKeepStr: '1'))
     }
     stages {
