@@ -6,6 +6,7 @@ void call(Map args = [:]) {
         args.extra
     ] - null).join("\n")
 
+    echo(text)
     // withCredentials([string(credentialsId: args.credentialsId, variable: 'WEBHOOK_URL')]) {
     //     sh ([
     //         'curl',
